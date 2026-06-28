@@ -50,11 +50,20 @@
         }
 
         /* --- Header --- */
-        header {
+                header {
             text-align: center;
-            margin-top: 180px; /* Espacio para que luzca el astrolabio de tu imagen de fondo */
+            /* Margen normal para móviles */
+            margin-top: 40px; 
             margin-bottom: 40px;
         }
+
+        /* Le decimos al navegador que si la pantalla es grande (PC/Tablet), aumente el espacio */
+        @media (min-width: 768px) {
+            header {
+                margin-top: 180px;
+            }
+        }
+
 
         h1.title {
             font-family: 'Cinzel Decorative', serif;
